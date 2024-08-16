@@ -6,11 +6,19 @@
   "action": {
     "default_popup": "pages/index.html"
   },
+  "permissions": [
+    "activeTab", "tabs", "scripting", "storage", "windows"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*",
+    "*://*/*"
+  ],
   "background": {
     "service_worker": "scripts/background.js",
     "type": "module"
   },
   "icons": {
-    "1000": "resources/scotiabank-logo.png"
+    "500": "resources/logo-sq.png"
   }
 }
